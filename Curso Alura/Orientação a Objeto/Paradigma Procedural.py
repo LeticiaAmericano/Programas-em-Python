@@ -9,7 +9,7 @@ def saca(conta, valor):
     conta["saldo"] -= valor
 
 def extrato(conta):
-    print("Saldo é {}".format(conta["saldo"]))
+    print("Saldo Ã© {}".format(conta["saldo"]))
 
 conta = criaConta(123, "leticia", 55.0, 1000.0)
 deposita(conta, 15.0)
