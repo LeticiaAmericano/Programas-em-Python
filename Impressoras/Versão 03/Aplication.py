@@ -130,7 +130,7 @@ class Aplication:
     def nameprofilecomputer(self):
         name = self.commandspowershell("hostname")
         self.name.insert("end", name)
-
+        profile = 0
         if name[0] == "z":
             profile = "Zona Eleitoral"
         elif name[0] == "r":
