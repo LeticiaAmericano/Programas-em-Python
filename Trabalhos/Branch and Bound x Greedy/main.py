@@ -26,24 +26,15 @@ def main():
     for i in range(1,3):
         if (i==1):
             
-            sequence, total_penalty, total_time = greedy(jobs)
+            sequence, total_penalty, total_time, memory_used = greedy(jobs)
 
             print("Greedy")
             print("------------------------")
             print("Sequência de trabalhos:", sequence)
             print("Penalidade total:", total_penalty)
             print("Tempo total:", total_time)
+            print("Memoria utilizada:", memory_used)
             print("------------------------")
-        # if (i==2):
-        #     start_time = time.time()
-        #     best_sequence, best_penalty = branch_and_bound(jobs, [])
-        #     end_time = time.time() 
-        #     total_time = end_time - start_time
-        #     print("Branch and Bounch")
-        #     print("------------------------")
-        #     print("Sequência de trabalhos:", [job.id for job in best_sequence])
-        #     print("Penalidade total:", best_penalty)
-        #     print("Tempo total:", total_time)
         if (i==2):
             start_time = time.time()
             best_sequence, best_penalty = branch_and_bound(jobs, [])
